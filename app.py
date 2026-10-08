@@ -30,7 +30,7 @@ st.divider()
 
 st.subheader('간단한 인사말 만들기')
 
-name = st.txt_input('이름을 입력해 주세요',placeholder='예) 홍길동')
+name = st.text_input('이름을 입력해 주세요',placeholder='예) 홍길동')
 
 if st.button('인사말 확인',type='primary'):
     if name.strip():
