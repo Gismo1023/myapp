@@ -32,7 +32,7 @@ st.subheader('간단한 인사말 만들기')
 
 name = st.txt_input('이름을 입력해 주세요',placeholder='예) 홍길동')
 
-if st.button('인사말 확인',type='primary'):c
+if st.button('인사말 확인',type='primary'):
     if name.strip():
         st.success(f'{APP_GREETING}, {name.strip()}님! Render 배포가 잘 되었습니다')
     else:
@@ -46,7 +46,7 @@ if os.getenv('APP_GREETING'):
     st.success('APP_GREETING 환경변수를 성공적으로 읽었습니다')
     st.write(f'현재 인사말 설정값:{APP_GREETING}')
 else:
-    st.info(f'APP_GREEETING 환경변수가 설정되지 않아 기본값을 사용 중입니다.')
+    st.info(f'APP_GREETING 환경변수가 설정되지 않아 기본값을 사용 중입니다.')
 
 
 
